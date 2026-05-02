@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --amber: #F59E0B;
+  --amber-dark: #D97706;
+  --navy: #070B14;
+  --navy-mid: #0D1424;
+  --glass: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #070B14;
+  color: #F1F5F9;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/[0.06] backdrop-blur-xl border border-white/[0.12] rounded-2xl shadow-lg
+      transition-all duration-300
+      hover:border-amber/30 hover:shadow-amber-500/10 hover:shadow-xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-amber-DEFAULT text-navy font-head font-bold
+      text-sm tracking-widest uppercase px-8 py-3.5 rounded-lg border-none cursor-pointer
+      transition-all duration-200 shadow-[0_0_24px_rgba(245,158,11,0.25)]
+      hover:bg-amber-dark hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(245,158,11,0.4)];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 bg-transparent text-slate-100 font-head font-semibold
+      text-sm tracking-widest uppercase px-8 py-3.5 rounded-lg cursor-pointer
+      border border-white/[0.12] transition-all duration-200
+      hover:border-amber-DEFAULT hover:bg-amber-DEFAULT/[0.06] hover:-translate-y-0.5;
+  }
+
+  .section-label {
+    @apply text-xs font-semibold tracking-[0.18em] uppercase text-amber-DEFAULT mb-3 block;
+  }
+
+  .section-title {
+    @apply font-head font-extrabold leading-tight mb-6;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070B14;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.6);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(245, 158, 11, 0.3);
+  color: #F1F5F9;
+}
