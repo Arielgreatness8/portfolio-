@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="max-w-4xl mx-auto">
         {/* Tag */}
         <motion.div {...fadeUp(0.1)}>
-          <span className="inline-block text-xs font-semibold tracking-[0.18em] uppercase text-amber-DEFAULT border border-amber-DEFAULT/30 px-4 py-1.5 rounded-full bg-amber-DEFAULT/[0.07] mb-6">
+          <span className="inline-block text-xs font-semibold tracking-[0.18em] uppercase text-purple-400 border border-purple-500/30 px-4 py-1.5 rounded-full bg-purple-500/[0.07] mb-6">
             Frontend Developer &amp; Graphic Designer
           </span>
         </motion.div>
@@ -36,7 +36,7 @@ export default function Hero() {
           style={{ fontSize: 'clamp(2.6rem, 7vw, 5.5rem)' }}
         >
           Chinonso{' '}
-          <span className="text-amber-DEFAULT">Ariel</span>
+          <span className="text-purple-400">Ariel</span>
           <br />
           <span className="text-slate-300" style={{ fontSize: 'clamp(1.6rem, 4vw, 3.2rem)' }}>
             Onyemauchechukwu

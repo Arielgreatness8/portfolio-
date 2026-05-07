@@ -29,7 +29,7 @@ export default function Skills() {
         </ScrollReveal>
         <ScrollReveal delay={0.1} className="text-center mb-14">
           <h2 className="section-title text-slate-100">
-            My <span className="text-amber-DEFAULT">Skills</span>
+            My <span className="text-purple-400">Skills</span>
           </h2>
         </ScrollReveal>
 
@@ -51,10 +51,10 @@ export default function Skills() {
               className="glass-card p-5 text-center cursor-default group"
             >
               <span className="text-3xl mb-3 block">{skill.icon}</span>
-              <div className="font-head font-bold text-sm text-slate-100 mb-1 group-hover:text-amber-DEFAULT transition-colors">
+              <div className="font-head font-bold text-sm text-slate-100 mb-1 group-hover:text-purple-400 transition-colors">
                 {skill.name}
               </div>
-              <div className="text-[11px] tracking-wide text-amber-DEFAULT/80 font-medium">
+              <div className="text-[11px] tracking-wide text-purple-400/80 font-medium">
                 {skill.level}
               </div>
 

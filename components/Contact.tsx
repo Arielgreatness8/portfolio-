@@ -34,7 +34,7 @@ export default function Contact() {
           <span className="section-label">Get In Touch</span>
           <h2 className="section-title text-slate-100">
             Let&apos;s Work{' '}
-            <span className="text-amber-DEFAULT">Together</span>
+            <span className="text-purple-400">Together</span>
           </h2>
           <p className="text-slate-400 text-sm md:text-base leading-relaxed mb-12">
             Have a project in mind? Need a frontend developer or graphic designer?
@@ -53,7 +53,7 @@ export default function Contact() {
             </p>
             <motion.a
               href="mailto:arielgreatness8@gmail.com"
-              className="inline-block font-head font-semibold text-lg md:text-xl text-amber-DEFAULT mb-10 border-b border-amber-DEFAULT/30 pb-1 hover:border-amber-DEFAULT transition-colors"
+              className="inline-block font-head font-semibold text-lg md:text-xl text-purple-400 mb-10 border-b border-purple-500/30 pb-1 hover:border-purple-500 transition-colors"
               whileHover={{ scale: 1.02 }}
             >
               arielgreatness8@gmail.com
@@ -80,7 +80,7 @@ export default function Contact() {
                   transition={{ delay: 0.3 + i * 0.08 }}
                   whileHover={{ y: -3, scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/[0.04] border border-white/10 text-slate-400 text-sm font-medium hover:border-amber-DEFAULT hover:text-amber-DEFAULT hover:bg-amber-DEFAULT/[0.05] transition-all duration-200"
+                  className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/[0.04] border border-white/10 text-slate-400 text-sm font-medium hover:border-purple-500 hover:text-purple-400 hover:bg-amber-DEFAULT/[0.05] transition-all duration-200"
                 >
                   <span className="text-base">{link.icon}</span>
                   {link.label}

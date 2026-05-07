@@ -4,12 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background-color: #070B14;
+  background-color: #0A0A0F;
   color: #F1F5F9;
   font-family: 'DM Sans', sans-serif;
   overflow-x: hidden;
@@ -17,15 +15,15 @@ body {
 
 @layer components {
   .glass-card {
-    @apply bg-white/[0.06] backdrop-blur-xl border border-white/[0.12] rounded-2xl shadow-lg transition-all duration-300;
+    @apply bg-white/[0.05] backdrop-blur-xl border border-white/[0.08] rounded-2xl shadow-lg transition-all duration-300;
   }
   .glass-card:hover {
-    border-color: rgba(245,158,11,0.3);
-    box-shadow: 0 0 30px rgba(245,158,11,0.08);
+    border-color: rgba(168,85,247,0.4);
+    box-shadow: 0 0 30px rgba(168,85,247,0.12);
   }
   .section-label {
     @apply text-xs font-semibold tracking-[0.18em] uppercase mb-3 block;
-    color: #F59E0B;
+    color: #A855F7;
   }
   .section-title {
     @apply font-extrabold leading-tight mb-6;
@@ -33,30 +31,31 @@ body {
   }
   .btn-primary {
     @apply inline-flex items-center gap-2 text-sm tracking-widest uppercase px-8 py-3 rounded-lg cursor-pointer transition-all duration-200;
-    background-color: #F59E0B;
-    color: #070B14;
+    background: linear-gradient(135deg, #A855F7, #7C3AED);
+    color: #ffffff;
     font-weight: 700;
     border: none;
-    box-shadow: 0 0 24px rgba(245,158,11,0.25);
+    box-shadow: 0 0 24px rgba(168,85,247,0.35);
   }
   .btn-primary:hover {
-    background-color: #D97706;
+    background: linear-gradient(135deg, #9333EA, #6D28D9);
     transform: translateY(-2px);
+    box-shadow: 0 0 40px rgba(168,85,247,0.5);
   }
   .btn-outline {
     @apply inline-flex items-center gap-2 bg-transparent text-slate-100 text-sm tracking-widest uppercase px-8 py-3 rounded-lg cursor-pointer transition-all duration-200;
-    border: 1px solid rgba(255,255,255,0.12);
+    border: 1px solid rgba(168,85,247,0.3);
     font-weight: 600;
   }
   .btn-outline:hover {
-    border-color: #F59E0B;
-    background-color: rgba(245,158,11,0.06);
+    border-color: #A855F7;
+    background-color: rgba(168,85,247,0.08);
     transform: translateY(-2px);
   }
 }
 
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #070B14; }
-::-webkit-scrollbar-thumb { background: rgba(245,158,11,0.3); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(245,158,11,0.6); }
-::selection { background: rgba(245,158,11,0.3); color: #F1F5F9; }
+::-webkit-scrollbar-track { background: #0A0A0F; }
+::-webkit-scrollbar-thumb { background: rgba(168,85,247,0.4); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(168,85,247,0.7); }
+::selection { background: rgba(168,85,247,0.3); color: #F1F5F9; }

@@ -25,7 +25,7 @@ export default function About() {
             <span className="section-label">About Me</span>
             <h2 className="section-title text-slate-100">
               Crafting digital experiences that{' '}
-              <span className="text-amber-DEFAULT">actually connect</span>
+              <span className="text-purple-400">actually connect</span>
             </h2>
             <div className="space-y-4 text-slate-400 text-sm md:text-base leading-loose">
               <p>
@@ -60,7 +60,7 @@ export default function About() {
                 transition={{ duration: 0.5, delay: i * 0.1, ease: [0.4, 0, 0.2, 1] }}
                 className="glass-card p-6 md:p-8"
               >
-                <div className="font-head font-extrabold text-4xl text-amber-DEFAULT mb-1">
+                <div className="font-head font-extrabold text-4xl text-purple-400 mb-1">
                   {stat.num}
                 </div>
                 <div className="text-xs text-slate-500 tracking-wide uppercase font-medium">

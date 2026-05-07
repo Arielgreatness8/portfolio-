@@ -67,13 +67,13 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
         {/* Animated glow on hover */}
         <motion.div
-          className="absolute inset-0 bg-amber-DEFAULT/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          className="absolute inset-0 bg-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         />
       </div>
 
       {/* Body */}
       <div className="p-6 flex flex-col flex-1">
-        <h3 className="font-head font-bold text-lg text-slate-100 mb-3 group-hover:text-amber-DEFAULT transition-colors">
+        <h3 className="font-head font-bold text-lg text-slate-100 mb-3 group-hover:text-purple-400 transition-colors">
           {project.title}
         </h3>
         <p className="text-sm text-slate-400 leading-relaxed flex-1 mb-4">
@@ -85,7 +85,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           {project.techStack.map((tech) => (
             <span
               key={tech}
-              className="text-[11px] font-semibold tracking-wide px-3 py-1 rounded-full border border-amber-DEFAULT/30 text-amber-DEFAULT bg-amber-DEFAULT/[0.07]"
+              className="text-[11px] font-semibold tracking-wide px-3 py-1 rounded-full border border-purple-500/30 text-purple-400 bg-purple-500/[0.07]"
             >
               {tech}
             </span>
@@ -100,7 +100,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="flex-1 text-center py-2.5 rounded-lg bg-amber-DEFAULT text-navy text-xs font-bold tracking-widest uppercase transition-colors hover:bg-amber-dark"
+            className="flex-1 text-center py-2.5 rounded-lg bg-purple-500 text-navy text-xs font-bold tracking-widest uppercase transition-colors hover:bg-amber-dark"
           >
             Live Demo ↗
           </motion.a>
@@ -110,7 +110,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="flex-1 text-center py-2.5 rounded-lg border border-white/10 text-slate-400 text-xs font-semibold tracking-widest uppercase transition-all hover:border-amber-DEFAULT hover:text-amber-DEFAULT"
+            className="flex-1 text-center py-2.5 rounded-lg border border-white/10 text-slate-400 text-xs font-semibold tracking-widest uppercase transition-all hover:border-purple-500 hover:text-purple-400"
           >
             Source Code
           </motion.a>
@@ -129,7 +129,7 @@ export default function Projects() {
         </ScrollReveal>
         <ScrollReveal delay={0.1} className="text-center mb-14">
           <h2 className="section-title text-slate-100">
-            Featured <span className="text-amber-DEFAULT">Projects</span>
+            Featured <span className="text-purple-400">Projects</span>
           </h2>
         </ScrollReveal>
 

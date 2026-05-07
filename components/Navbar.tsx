@@ -72,7 +72,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={(e) => { e.preventDefault(); handleNavClick(link.href) }}
                   className={`text-xs font-semibold tracking-[0.12em] uppercase transition-colors duration-200 cursor-pointer ${
-                    isActive ? 'text-amber-DEFAULT' : 'text-slate-400 hover:text-amber-DEFAULT'
+                    isActive ? 'text-purple-400' : 'text-slate-400 hover:text-purple-400'
                   }`}
                   whileHover={{ y: -1 }}
                 >
@@ -126,7 +126,7 @@ export default function Navbar() {
                   <a
                     href={link.href}
                     onClick={(e) => { e.preventDefault(); handleNavClick(link.href) }}
-                    className="block px-8 py-4 text-sm font-semibold tracking-widest uppercase text-slate-400 hover:text-amber-DEFAULT transition-colors"
+                    className="block px-8 py-4 text-sm font-semibold tracking-widest uppercase text-slate-400 hover:text-purple-400 transition-colors"
                   >
                     {link.label}
                   </a>

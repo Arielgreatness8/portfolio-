@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="relative z-10 border-t border-white/[0.08] py-8 px-6 text-center">
       <p className="text-slate-600 text-xs tracking-wide">
         Designed &amp; Built by{' '}
-        <span className="text-amber-DEFAULT font-semibold">
+        <span className="text-purple-400 font-semibold">
           Chinonso Ariel Onyemauchechukwu
         </span>{' '}
         · {year}
