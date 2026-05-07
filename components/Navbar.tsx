@@ -54,11 +54,11 @@ export default function Navbar() {
         <motion.a
           href="#hero"
           onClick={(e) => { e.preventDefault(); handleNavClick('#hero') }}
-          className="font-head font-extrabold text-xl text-amber-DEFAULT tracking-wide cursor-pointer"
+          className="cursor-pointer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          CA
+          <img src="/logo.png" alt="Logo" style={{height:"38px",width:"auto"}} />
         </motion.a>
 
         {/* Desktop links */}
