@@ -9,10 +9,10 @@ export default function Intro() {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
-    const seen = localStorage.getItem('caevo_intro_seen')
-    if (!seen) {
+    const count = parseInt(localStorage.getItem('caevo_intro_count') || '0')
+    if (count < 5) {
       setShow(true)
-      localStorage.setItem('caevo_intro_seen', 'true')
+      localStorage.setItem('caevo_intro_count', String(count + 1))
       const interval = setInterval(() => {
         setProgress(p => {
           if (p >= 100) { clearInterval(interval); return 100 }
@@ -45,10 +45,10 @@ export default function Intro() {
                 height: Math.random() * 3 + 1,
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                background: `rgba(168,85,247,${Math.random() * 0.6 + 0.2})`,
+                background: `rgba(168,85,247,0.5)`,
               }}
               animate={{ y: [0, -30, 0], opacity: [0.2, 0.8, 0.2] }}
-              transition={{ duration: Math.random() * 3 + 2, repeat: Infinity, delay: Math.random() * 2 }}
+              transition={{ duration: 3, repeat: Infinity, delay: i * 0.2 }}
             />
           ))}
 
