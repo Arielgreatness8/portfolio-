@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Chinonso Ariel Onyemauchechukwu' }],
   creator: 'Chinonso Ariel Onyemauchechukwu',
+  verification: { google: 'zH850JWqRu9AC2GIZu1vhqADa6QAFSOWhL8KvoE-Xzg' },
   robots: {
     index: true,
     follow: true,
