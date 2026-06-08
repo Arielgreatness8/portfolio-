@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
+  { label: 'Designs', href: '/designs' },
 ]
 
 export default function Navbar() {
